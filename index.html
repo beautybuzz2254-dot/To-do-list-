@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do-List Web App</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <main class="todo-wrapper">
+    <div class="todo-card">
+      <span class="todo-badge">Task 2</span>
+      <h1>My To-Do List</h1>
+      <p class="todo-subtitle">Add, edit, complete, and manage your daily tasks.</p>
+
+      <!-- Add Task Form -->
+      <form id="todoForm" class="todo-form">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="Write a new task..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit" class="btn-add">Add</button>
+      </form>
+
+      <!-- Task Counter -->
+      <div class="todo-stats">
+        <span id="taskCount">0 tasks remaining</span>
+        <button type="button" id="clearCompletedBtn" class="btn-clear">Clear Completed</button>
+      </div>
+
+      <!-- Tasks List -->
+      <ul id="todoList" class="todo-list"></ul>
+    </div>
+  </main>
+   
+    <script src="script.js"></script>
+</body>
